@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+   <meta charset ="UTF-8" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <title>Tribute to Lewis Hamilton</title>
+   <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <div id="tsparticles"></div>
+    <main id="main">
+       <h1 id="title">Lewis Carl Davidson Hamilton</h1>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #f5f5f5;
+  padding: 2rem;
+  text-align: center;
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00d2be;
+  margin-bottom: 2rem;
+}
+
+#img-div {
+  margin: 2rem auto;
+  background-color: #111;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(0, 210, 190, 0.3);
+  max-width: 800px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  border: 3px solid #551a8b;
+}
+
+#img-caption {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+#tribute-info {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #111;
+  border-left: 4px solid #00d2be;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(85, 26, 139, 0.3);
+}
+
+#tribute-info h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  border-bottom: 10px solid #444;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#tribute-info ul {
+  padding-left: 1.5rem;
+  line-height: 1.8rem;
+}
+
+#tribute-info li {
+  margin-bottom: 0.75rem;
+}
+
+#tribute-link {
+  display: inline-block;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #00d2be;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#tribute-link:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+
+@media (max-width; 600px) {
+  #title {
+    font-size: 2rem;
+  }
+ 
+ #tribute-info {
+   padding: 1rem;
+ }
+
+}
