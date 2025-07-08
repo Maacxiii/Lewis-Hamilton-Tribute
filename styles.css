@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -6,22 +5,14 @@ body {
   color: #dfdfe2;
   padding: 2rem;
   text-align: center;
-  scroll-behavior: smooth;
 }
 
 #title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: #00d2be;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 0 10px #00d2be;
-}
-
-main > p {
-  font-size: 1.25rem;
-  color: #aaa;
   margin-bottom: 2rem;
 }
 
@@ -30,20 +21,16 @@ main > p {
   background-color: #111;
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 0 20px rgba(0, 210, 190, 0.4);
+  box-shadow: 0 0 20px rgba(0, 210, 190, 0.3);
   max-width: 800px;
-  transition: transform 0.3s ease;
-}
-
-#img-div:hover {
-  transform: scale(1.02);
 }
 
 #image {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 8px;
   border: 3px solid #551a8b;
 }
@@ -56,22 +43,21 @@ main > p {
 
 #tribute-info {
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 0 auto;
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #111;
   border-left: 4px solid #00d2be;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(85, 26, 139, 0.4);
-  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(85, 26, 139, 0.3);
 }
 
 #tribute-info h2 {
   font-size: 2rem;
   color: #ffffff;
-  border-bottom: 2px solid #444;
+  border-bottom: 10px solid #444;
   padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #tribute-info ul {
@@ -81,7 +67,6 @@ main > p {
 
 #tribute-info li {
   margin-bottom: 0.75rem;
-  transition: all 0.3s ease;
 }
 
 #tribute-link {
@@ -100,16 +85,15 @@ main > p {
   border-bottom: 2px solid #ffffff;
 }
 
+
+
 @media (max-width: 600px) {
   #title {
     font-size: 2rem;
   }
+ 
+ #tribute-info {
+   padding: 1rem;
+ }
 
-  #tribute-info {
-    padding: 1rem;
-  }
-
-  #img-div {
-    margin: 1rem;
-  }
 }
