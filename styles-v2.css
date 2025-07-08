@@ -1,4 +1,40 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: red;
+  color: #dfdfe2;
+  padding: 2rem;
+  text-align: center;
+  scroll-behavior: smooth;
+  
+}
 
+#title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #00d2be;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px #00d2be;
+}
+
+main > p {
+  font-size: 1.25rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+
+}
+
+#img-div {
+  margin: 2rem auto;
+  background-color: #111;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(0, 210, 190, 0.4);
+  max-width: 800px;
+  transition: transform 0.3s ease;
+}
  
 
   #img-div:hover {
