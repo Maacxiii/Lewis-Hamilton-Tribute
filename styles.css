@@ -86,6 +86,16 @@
   border-bottom: 2px solid #ffffff;
 }
 
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  pointer-events: none; /* prevent it from blocking clicks */
+}
+
 
 @media (max-width: 600px) {
   #title {
