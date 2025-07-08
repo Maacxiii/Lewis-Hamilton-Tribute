@@ -1,12 +1,12 @@
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: red;
+  background-color: #0a0a23;
   color: #dfdfe2;
   padding: 2rem;
   text-align: center;
   scroll-behavior: smooth;
-  
 }
 
 #title {
@@ -23,7 +23,6 @@ main > p {
   font-size: 1.25rem;
   color: #aaa;
   margin-bottom: 2rem;
-
 }
 
 #img-div {
@@ -35,10 +34,9 @@ main > p {
   max-width: 800px;
   transition: transform 0.3s ease;
 }
- 
 
-  #img-div:hover {
-    transform: scale(1.02);
+#img-div:hover {
+  transform: scale(1.02);
 }
 
 #image {
@@ -102,20 +100,16 @@ main > p {
   border-bottom: 2px solid #ffffff;
 }
 
-
-
 @media (max-width: 600px) {
   #title {
     font-size: 2rem;
   }
- 
- #tribute-info {
-   padding: 1rem;
- }
 
-#img-div {
-  margin: 1rem;
+  #tribute-info {
+    padding: 1rem;
+  }
 
-}
-  
+  #img-div {
+    margin: 1rem;
+  }
 }
