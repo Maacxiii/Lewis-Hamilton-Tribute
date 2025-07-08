@@ -2,11 +2,7 @@
   body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: red;
-  color: #dfdfe2;
-  padding: 2rem;
-  text-align: center;
-  scroll-behavior: smooth;
+  
 }
 
 #title {
