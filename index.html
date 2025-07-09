@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tribute to Lewis Hamilton</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
 </head>
 <body>
-  
   <div id="tsparticles"></div>
-
-  
-  <button id="play-button">▶️ Play F1 Intro</button>
-  <div id="f1-audio-container"></div>
 
   <main id="main">
     <h1 id="title">Lewis Carl Davidson Hamilton</h1>
     <p>The Most Successful Formula 1 Driver in History</p>
 
     <figure id="img-div">
-      <img id="image" src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2024-02/240102-lewis-hamilton-mb-1209-65adb6.jpg" alt="Lewis Hamilton in Mercedes uniform" />
+      <img
+        id="image"
+        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2024-02/240102-lewis-hamilton-mb-1209-65adb6.jpg"
+        alt="Lewis Hamilton in Mercedes uniform"
+      />
       <figcaption id="img-caption">Lewis Hamilton in Mercedes-AMG Petronas</figcaption>
     </figure>
-
-    <div id="audio-container">
-  <iframe width="300" height="80"
-    src="https://www.youtube.com/embed/GnF1D3ZkIHI?rel=0"
-    title="F1 Theme"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-</div>
-
 
     <section id="tribute-info">
       <h2>Career Highlights</h2>
@@ -50,55 +38,53 @@
         <li>First and only Black driver in Formula One history</li>
         <li>Launched the Hamilton Commission to improve diversity in UK motorsport</li>
         <li>Named a knight in the 2021 New Year Honours — now Sir Lewis Hamilton</li>
-        <li>Advocates for human rights, sustainability, and equality</li>
+        <li>Advocate for human rights, environmental sustainability, and racial equality</li>
         <li>Featured in TIME’s 100 Most Influential People multiple times</li>
-        <li>Collaborated with Tommy Hilfiger and launched his own clothing line</li>
+        <li>Collaborated with Tommy Hilfiger and launched his own fashion line</li>
       </ul>
     </section>
 
-    <p>Learn more about Lewis Hamilton on 
+    <p>
+      Learn more about Lewis Hamilton on
       <a id="tribute-link" href="https://en.wikipedia.org/wiki/Lewis_Hamilton" target="_blank">Wikipedia</a>
     </p>
+
+    <!-- 🎵 F1 Theme -->
+    <div id="audio-container">
+      <iframe 
+        width="300" 
+        height="80" 
+        src="https://www.youtube.com/embed/GnF1D3ZkIHI?rel=0"
+        title="F1 Theme"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
   </main>
 
- 
+  <!-- ✨ particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
   <script>
     tsParticles.load("tsparticles", {
-      background: { color: "#0a0a23" },
       fullScreen: { enable: true, zIndex: -1 },
       particles: {
-        number: { value: 80, density: { enable: true, area: 800 } },
+        number: { value: 60 },
         color: { value: "#ffffff" },
         shape: { type: "circle" },
-        opacity: { value: 0.8, random: true },
-        size: { value: 2, random: true },
-        move: { enable: true, speed: 0.6, outModes: "out" }
+        opacity: { value: 0.5 },
+        size: { value: { min: 1, max: 3 } },
+        move: {
+          enable: true,
+          speed: 0.6,
+          direction: "none",
+          outMode: "bounce"
+        }
       },
-      detectRetina: true
-    });
-
-    
-    document.getElementById("play-button").addEventListener("click", function () {
-      const container = document.getElementById("f1-audio-container");
-      container.innerHTML = `
-        <iframe width="0" height="0"
-          src="https://www.youtube.com/embed/Ue8KXlZkYUs?autoplay=1"
-          title="F1 Intro"
-          frameborder="0"
-          allow="autoplay"
-          allowfullscreen>
-        </iframe>
-      `;
-      this.disabled = true;
-      this.textContent = "🎵 Playing...";
+      background: {
+        color: "#0a0a23"
+      }
     });
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
