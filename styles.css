@@ -9,6 +9,16 @@ body {
   scroll-behavior: smooth;
 }
 
+#audio-container {
+  margin: 1rem auto 2rem;
+  text-align: center;
+}
+
+audio {
+  width: 300px;
+  border-radius: 8px;
+}
+
 #title {
   font-size: 3rem;
   font-weight: 700;
@@ -98,12 +108,6 @@ main > p {
 #tribute-link:hover {
   color: #ffffff;
   border-bottom: 2px solid #ffffff;
-}
-
-#audio-container {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
 }
 
 @media (max-width: 600px) {
