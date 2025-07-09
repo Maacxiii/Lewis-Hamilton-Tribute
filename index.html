@@ -1,90 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tribute to Lewis Hamilton</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div id="tsparticles"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute to Lewis Hamilton</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles-v2.css" />
+  </head>
+  <body>
+    <div id="tsparticles"></div>
 
-  <main id="main">
-    <h1 id="title">Lewis Carl Davidson Hamilton</h1>
-    <p>The Most Successful Formula 1 Driver in History</p>
-
-    <figure id="img-div">
-      <img
-        id="image"
-        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2024-02/240102-lewis-hamilton-mb-1209-65adb6.jpg"
-        alt="Lewis Hamilton in Mercedes uniform"
-      />
-      <figcaption id="img-caption">Lewis Hamilton in Mercedes-AMG Petronas</figcaption>
-    </figure>
-
-    <section id="tribute-info">
-      <h2>Career Highlights</h2>
-      <ul>
-        <li>Born: January 7, 1985 in Stevenage, England</li>
-        <li>Started racing remote-controlled cars at age 6 and go-karts at age 8</li>
-        <li>Won the British Formula Renault, Formula 3 Euro Series, and GP2 Series before entering F1</li>
-        <li>Made his Formula One debut with McLaren in 2007, nearly winning the championship in his rookie season</li>
-        <li>First driver in F1 history to win a race in every season he competed in (2007–2023)</li>
-        <li>Won his first Formula One World Championship in 2008</li>
-        <li>Joined Mercedes-AMG Petronas in 2013 and began a dominant era</li>
-        <li>Won 6 more World Championships in 2014, 2015, 2017, 2018, 2019, and 2020</li>
-        <li>Holds the all-time records for most pole positions and most Grand Prix wins (100+)</li>
-        <li>First and only Black driver in Formula One history</li>
-        <li>Launched the Hamilton Commission to improve diversity in UK motorsport</li>
-        <li>Named a knight in the 2021 New Year Honours — now Sir Lewis Hamilton</li>
-        <li>Advocate for human rights, environmental sustainability, and racial equality</li>
-        <li>Featured in TIME’s 100 Most Influential People multiple times</li>
-        <li>Collaborated with Tommy Hilfiger and launched his own fashion line</li>
-      </ul>
-    </section>
-
-    <p>
-      Learn more about Lewis Hamilton on
-      <a id="tribute-link" href="https://en.wikipedia.org/wiki/Lewis_Hamilton" target="_blank">Wikipedia</a>
-    </p>
-
-    <!-- 🎵 F1 Theme -->
     <div id="audio-container">
-      <iframe 
-        width="300" 
-        height="80" 
-        src="https://www.youtube.com/embed/GnF1D3ZkIHI?rel=0"
-        title="F1 Theme"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+      <audio controls>
+        <source src="f1-intro.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
     </div>
-  </main>
 
-  <!-- ✨ particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
-  <script>
-    tsParticles.load("tsparticles", {
-      fullScreen: { enable: true, zIndex: -1 },
-      particles: {
-        number: { value: 60 },
-        color: { value: "#ffffff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5 },
-        size: { value: { min: 1, max: 3 } },
-        move: {
-          enable: true,
-          speed: 0.6,
-          direction: "none",
-          outMode: "bounce"
-        }
-      },
-      background: {
-        color: "#0a0a23"
-      }
-    });
-  </script>
-</body>
+    <main id="main">
+      <h1 id="title">Lewis Carl Davidson Hamilton</h1>
+      <p>The Most Successful Formula 1 Driver in History</p>
+
+      <figure id="img-div">
+        <img
+          id="image"
+          src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2024-02/240102-lewis-hamilton-mb-1209-65adb6.jpg"
+          alt="Lewis Hamilton in Mercedes uniform"
+        />
+        <figcaption id="img-caption">Lewis Hamilton in Mercedes-AMG Petronas</figcaption>
+      </figure>
+
+      <section id="tribute-info">
+        <h2>Career Highlights</h2>
+        <ul>
+          <li>Born: January 7, 1985 in Stevenage, England</li>
+          <li>Started racing remote-controlled cars at age 6 and go-karts at age 8</li>
+          <li>Won the British Formula Renault, Formula 3 Euro Series, and GP2 Series before entering F1</li>
+          <li>Made his Formula One debut with McLaren in 2007, nearly winning the championship in his rookie season</li>
+          <li>First driver in F1 history to win a race in every season he competed in (2007–2023)</li>
+          <li>Won his first Formula One World Championship in 2008</li>
+          <li>Joined Mercedes-AMG Petronas in 2013 and began a dominant era</li>
+          <li>Won 6 more World Championships in 2014, 2015, 2017, 2018, 2019, and 2020</li>
+          <li>Holds the all-time records for most pole positions and most Grand Prix wins (100+)</li>
+          <li>First and only Black driver in Formula One history</li>
+          <li>Launched the Hamilton Commission to improve diversity in UK motorsport</li>
+          <li>Named a knight in the 2021 New Year Honours — now Sir Lewis Hamilton</li>
+          <li>Continues to advocate for human rights, environmental sustainability, and racial equality</li>
+          <li>Featured in TIME’s 100 Most Influential People in the World multiple times</li>
+          <li>Collaborated with fashion brands like Tommy Hilfiger and launched his own clothing line</li>
+        </ul>
+      </section>
+
+      <p>
+        Learn more about Lewis Hamilton on
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Lewis_Hamilton" target="_blank">Wikipedia</a>
+      </p>
+    </main>
+
+    <!-- Particles.js script -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+    <script>
+      tsParticles.load("tsparticles", {
+        fullScreen: { enable: true, zIndex: -1 },
+        particles: {
+          number: { value: 100 },
+          size: { value: 2 },
+          move: { enable: true, speed: 0.5 },
+          opacity: { value: 0.6 },
+          color: { value: "#ffffff" },
+        },
+        background: { color: "#0a0a23" }
+      });
+    </script>
+  </body>
 </html>
