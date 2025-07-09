@@ -1,119 +1,25 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #0a0a23;
-  color: #dfdfe2;
-  padding: 2rem;
-  text-align: center;
-  scroll-behavior: smooth;
-}
-
-#title {
-  font-size: 3rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #00d2be;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 0 10px #00d2be;
-}
-
-main > p {
-  font-size: 1.25rem;
-  color: #aaa;
-  margin-bottom: 2rem;
-}
-
-#img-div {
-  margin: 2rem auto;
-  background-color: #111;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 0 20px rgba(0, 210, 190, 0.4);
-  max-width: 800px;
-  transition: transform 0.3s ease;
-}
-
-#img-div:hover {
-  transform: scale(1.02);
-}
-
-#image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
+/* F1 Play Button */
+#play-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #00d2be;
+  color: #0a0a23;
+  border: none;
+  padding: 0.75rem 1.25rem;
   border-radius: 8px;
-  border: 3px solid #551a8b;
-}
-
-#img-caption {
-  margin-top: 1rem;
-  font-style: italic;
-  color: #ccc;
-}
-
-#tribute-info {
-  max-width: 800px;
-  margin: 2rem auto;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-left: 4px solid #00d2be;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(85, 26, 139, 0.4);
-  backdrop-filter: blur(5px);
-}
-
-#tribute-info h2 {
-  font-size: 2rem;
-  color: #ffffff;
-  border-bottom: 2px solid #444;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-#tribute-info ul {
-  padding-left: 1.5rem;
-  line-height: 1.8rem;
-}
-
-#tribute-info li {
-  margin-bottom: 0.75rem;
-  transition: all 0.3s ease;
-}
-
-#tribute-link {
-  display: inline-block;
-  margin-top: 2rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: #00d2be;
-  text-decoration: none;
-  font-size: 1.1rem;
-  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  z-index: 999;
   transition: all 0.3s ease;
 }
 
-#tribute-link:hover {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+#play-button:hover {
+  background-color: #00a5a5;
 }
 
-.f1-audio {
+/* Hide iframe container by size (still loads and plays) */
+#f1-audio-container iframe {
   display: none;
 }
-
-@media (max-width: 600px) {
-  #title {
-    font-size: 2rem;
-  }
-
-  #tribute-info {
-    padding: 1rem;
-  }
-
-  #img-div {
-    margin: 1rem;
-  }
-}
-
