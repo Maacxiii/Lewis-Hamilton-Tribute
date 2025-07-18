@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -9,14 +8,13 @@ body {
   scroll-behavior: smooth;
 }
 
-#audio-container {
-  margin: 1rem auto 2rem;
-  text-align: center;
-}
-
-audio {
-  width: 300px;
-  border-radius: 8px;
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 #title {
@@ -123,3 +121,4 @@ main > p {
     margin: 1rem;
   }
 }
+
